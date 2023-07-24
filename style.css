@@ -1,0 +1,79 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black;
+}
+
+#gamebox {
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+    position: absolute;
+    overflow: hidden;
+}
+
+#userscore,
+#aiscore {
+    color: white;
+    font-size: 50px;
+    position: absolute;
+    top: 12px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#userscore {
+    left: 40%;
+}
+
+#aiscore {
+    right: 40%
+}
+
+.dashedlinevertical {
+    border-left: 2px dashed white;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 1px;
+    height: 100vh;
+    /* emove transform:translateX(-50%); */
+}
+
+#userpaddle {
+    width: 20px;
+    background-color: azure;
+    height: 100px;
+    position: absolute;
+    /* to move an  paddle in  direction to it will target top and bottom position which will be actually intiaited by the position absoulte  */
+    left: 5px;
+    border-radius: 10px;
+    top: 50%;
+    transform: translateY(-50%); 
+    /* to make it more to center */
+}
+
+#aipaddle {
+    width: 20px;
+    background-color: yellow;
+    height: 100px;
+    position: absolute;
+    right: 5px;
+    border-radius: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+#ball{
+    background-color: aqua;
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    width:20px;
+    height:20px;
+    border-radius: 50%;
+}
