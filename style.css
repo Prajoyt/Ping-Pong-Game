@@ -4,9 +4,6 @@
     box-sizing: border-box;
 }
 
-body {
-    background-color: black;
-}
 
 #gamebox {
     width: 100vw;
@@ -25,12 +22,18 @@ body {
     font-family: Arial, Helvetica, sans-serif;
 }
 
+
+
+
+
 #userscore {
     left: 40%;
+    color:red;
 }
 
 #aiscore {
-    right: 40%
+    right: 40%;
+    color:yellow
 }
 
 .dashedlinevertical {
@@ -45,7 +48,7 @@ body {
 
 #userpaddle {
     width: 20px;
-    background-color: azure;
+    background-color: red;
     height: 100px;
     position: absolute;
     /* to move an  paddle in  direction to it will target top and bottom position which will be actually intiaited by the position absoulte  */
